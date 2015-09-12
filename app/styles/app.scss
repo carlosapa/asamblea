@@ -1,0 +1,132 @@
+$primary: #FF0068;
+$person: #B1C1CA;
+
+#app {
+	min-height: 600px;
+	background-color: #eee;
+	margin: 2em auto;
+	position: relative;
+
+	.app_add {
+		position: absolute;
+		background-color: $primary;
+		width: 80px;
+		height: 80px;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		box-shadow: 0 0 0 0 rgba(darken($primary, 20%), .2), 0 0 0 0 rgba(darken($primary, 20%), .2) inset;
+		cursor: pointer;
+
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		-webkit-transition: all 350ms ease-in;
+		-moz-transition: all 350ms ease-in;
+		-ms-transition: all 350ms ease-in;
+		-o-transition: all 350ms ease-in;
+		transition: all 350ms ease-in;
+
+		&::before {
+			content: '+';
+			display: block;
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			top: 50%;
+			left: 50%;
+			color: white;
+			font-size: 2.8em;
+			padding: 10% 0%;
+  		text-align: center;
+
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);			
+		}
+
+		&:hover {
+			background-color: darken($primary, 7%);
+			box-shadow: 0 0 0 6px rgba(darken($primary, 20%), .2), 0 0 0 6px rgba(darken($primary, 20%), .2) inset;
+		}
+	}
+
+	.app_innerarea {
+		position: absolute;
+		border: 1px solid #ccc;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;	
+		pointer-events: none;	
+
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.app_person {
+		position: absolute;
+		background-color: $person;
+		pointer-events: initial;
+		width: 30px;
+		height: 30px;
+	  top: 50%;
+	  left: 50%;
+		border-radius: 50%;
+		box-shadow: 0 0 0 0 rgba(darken($person, 20%), .2), 0 0 0 0 rgba(darken($person, 20%), .2) inset;
+		cursor: pointer;
+
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		-webkit-transition: all 350ms ease-in;
+		-moz-transition: all 350ms ease-in;
+		-ms-transition: all 350ms ease-in;
+		-o-transition: all 350ms ease-in;
+		transition: all 350ms ease-in;
+
+
+		&::before {
+			content: '\e008';
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			top: 50%;
+			left: 50%;
+			color: white;
+			font-size: 1.2em;
+			padding: 10% 0%;
+  		text-align: center;
+  		font-family: 'Glyphicons Halflings';
+
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);			
+		}
+
+		&:hover {
+			background-color: darken($person, 7%);
+			box-shadow: 0 0 0 6px rgba(darken($person, 20%), .2), 0 0 0 6px rgba(darken($person, 20%), .2) inset;
+		}
+	}
+}
+
+
+
+
+
+
+
